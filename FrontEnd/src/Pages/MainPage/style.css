@@ -1,0 +1,128 @@
+.Admin-container{
+    display: flex;
+}
+
+.AdminPage-right{
+    flex-grow: 1;
+    height: 100%;
+    z-index: 1;
+}
+
+.AdminPage-left{
+    width: 300px;
+    height: 100vh;
+    background-color: #11101d;
+    color: white;
+    position: relative;
+    transition: 1s all ease;
+    transform-origin: center center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.icon-change{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.icon-change:hover{
+    transform: scale(1.1);
+}
+
+.AdminPage-left.close{
+    width: 90px;
+}
+
+
+.AdminPage-left_header .item-param{
+    margin-left: 0;
+}
+
+.item-param{
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 1s width ease,1s opacity ease;
+    margin-left: 25px;
+}
+  
+.AdminPage-left.close .item-param{ 
+    width: 0px;
+    opacity: 0;
+}
+
+.AdminPage-left .iconList .css-i4bv87-MuiSvgIcon-root{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+.AdminPage-left_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.AdminPage-left_header p:first-child{
+    font-size: 25px;
+    margin: 10px 10px 5px 10px;
+    text-align: center;
+}
+
+.AdminPage-left_header p:last-child{
+    font-size: 17px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.AdminPage-left_header img{
+    background-color: black;
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.AdminPage-left_content .item{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 30px;
+    width: 100%;
+}
+
+.AdminPage-left_content .item .css-i4bv87-MuiSvgIcon-root{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.AdminPage-left_content .item .icon{
+    width: 25px;
+    height: 25px;
+}
+
+.AdminPage-left_content .item:hover{
+    background-color: white;
+    color: black;
+}
+
+.AdminPage-left.close .AdminPage-left_content .item{
+    padding: 10px 0px 10px 30px;
+    height: 45px;
+}
+
+.AdminPage-left.close .AdminPage-left_content .item .icon{
+    margin: 0;
+}

@@ -1,0 +1,56 @@
+.formAddRole-container{
+    margin-top: 20px;
+}
+
+.formAddRole-container .content{
+    margin-bottom: 10px;
+}
+
+.formAddRole-content .areaList-item,
+.formAddRole-content .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.formAddRole-content .header p{
+    justify-self: center;
+}
+
+.formAddRole-content .areaList-item .item{
+    justify-self: center;
+}
+
+.formAddRole-content .header::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formAddRole-content .areaList-item::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+
+.formAddRole-content .areaList-item:last-child:after{
+    background-color: transparent;
+}
+
+.areaList{
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: scroll;
+}

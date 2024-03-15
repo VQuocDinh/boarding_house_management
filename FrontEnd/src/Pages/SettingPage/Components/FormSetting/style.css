@@ -1,0 +1,79 @@
+.formSetting-container{
+    display: flex;
+    justify-content: center;
+}
+
+.formSetting-content{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.Header_page{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.avaterUser{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 30px;
+}
+
+.avaterUser img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid #2374e1;
+}
+
+
+.changePass{
+    display: block;
+    color: #2374e1;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.changePass:hover{
+    text-decoration: underline;
+    transform: translateX(5px)
+}
+
+
+.avaterUser p{
+    color: #2374e1;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    transform-origin: center;
+}
+
+
+.avaterUser p:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+.changeInfoForm .input{
+    margin: 10px 0px;
+}
+
+
+.changeInfoForm .oneLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.changeInfoForm .oneLine .input{
+    width: 49%;
+}
+
+.changeInfoForm .buttons{
+    text-align: end;
+    margin: 20px 10px 10px 0px;
+}

@@ -1,0 +1,61 @@
+.Form-mutiFile{
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form-mutiFile_header{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Form-mutiFile .dragItemForm{
+    max-width: 600px;
+    margin: 20px 0px;
+}
+
+.Form-mutiFile_imgs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.Form-mutiFile_imgs-item img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.Form-mutiFile_imgs-item{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.icon-delete{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    transform: scale(0.8) translateY(-50%);
+    transition: 0.25s ease all;
+}
+
+.icon-delete:hover{
+    transform: scale(1) translateY(-40%);
+}
+
+.icon-delete .css-i4bv87-MuiSvgIcon-root{
+    width: 15px !important;
+    height: 15px !important;
+}

@@ -1,0 +1,139 @@
+.StafPage-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.StafPage-content{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.StafPage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.StafPage-content .content{
+    margin-top: 50px;
+}
+
+.staf-item,
+.staf-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 3fr 1fr 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.staf-header{
+    padding-bottom: 20px;
+}
+
+.staf-header::after{
+    content: "";
+    width: 85%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.staf-list{
+    margin-top: 20px;
+}
+
+.staf-header p{
+    justify-self: center;
+}
+
+.staf-list .item{
+    justify-self: center;
+}
+
+.staf-list .staf-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.staf-list .staf-item::after{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.staf-list img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.staf-item .icon{
+    cursor: pointer;
+    height: 24px;
+    transition: 1s ease all;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.staf-item .icon.active{
+    transform: rotate(0deg);
+}
+
+.staf-item .icon .iconBelong .css-i4bv87-MuiSvgIcon-root{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.staf-item .icon .iconBelong{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0 ;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: 1s all ease;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.staf-item .icon.icon.active .icon1{
+    transform: scale(1);
+    top: -20px;
+    left: 30px;
+    opacity: 1;
+}
+
+.staf-item .icon.icon.active .icon2{
+    transform: scale(1);
+    left: 30px;
+    opacity: 1;
+}
+
+.staf-item .icon.icon.active .icon3{
+    transform: scale(1);
+    top: 20px;
+    left: 30px; 
+    opacity: 1;
+}
+
+.staf-show .pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

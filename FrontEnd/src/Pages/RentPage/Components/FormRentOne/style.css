@@ -1,0 +1,25 @@
+.FormRentOne-container{
+    width: 450px;
+}
+
+.FormRentOne-content .header{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.FormRentOne-content .input{
+    margin-bottom: 20px;
+}
+
+.FormRentOne-content .FormRentOne-container-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.FormRentOne-content .FormRentOne-container-button .button{
+    margin-right: 15px;
+}

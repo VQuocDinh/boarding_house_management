@@ -1,0 +1,132 @@
+.report_roomNotDone-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: scroll;
+    max-width: 1200px;
+}
+
+.report_roomNotDone-content{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.report_roomNotDone-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.report_roomNotDone-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.report_roomNotDone-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.report_roomNotDone-content .searchs .oneLine{
+    display: flex;
+}
+
+.report_roomNotDone-content .searchs .oneLine .searchHouse,
+.report_roomNotDone-content .searchs .oneLine .searchRoom,
+.report_roomNotDone-content .searchs .oneLine .searchStatus{
+    width: 200px;
+    margin-right: 15px;
+}
+
+
+
+.report_roomNotDone-content .content{
+    min-height: 350px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.report_roomNotDone-content .content .header p{
+    font-size: 16px;
+    font-weight: 600;
+    justify-self: center;
+    white-space: pre-line
+}
+
+.report_roomNotDone-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.report_roomNotDone-content .content .header::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 3px;
+    background-color: black;
+}
+
+.report_roomNotDone-content .content .content-item,
+.report_roomNotDone-content .content .header{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+}
+
+.report_roomNotDone-content .content .content-item .item{
+    justify-self: center;
+    transition: 0.2s ease all;
+    text-align: center;
+    white-space: pre-line
+}
+
+.report_roomNotDone-content .content .content-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.report_roomNotDone-content .content .content-item::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.report_roomNotDone-content .content .content-item:last-child:after{
+    display: none;
+}
+
+.report_roomNotDone-content .button-clear .css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100% !important;
+}
+
+.report_roomNotDone-content .content .buttons{
+    display: flex;
+}
+
+
+.report_roomNotDone-content .content .css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.report_roomNotDone-content .content .item .button{
+    transition: 0.2s all ease;
+}
+
+.report_roomNotDone-content .content .item .button:hover{
+    transform: scale(1.1);
+}
+.report_roomNotDone-content .searchMonth{
+    margin-right: 15px;
+}

@@ -1,0 +1,113 @@
+.electricPage-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.electricPage-content{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.electricPage-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.electricPage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.electricPage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.electricPage-content .searchs .searchHouse{
+    width: 200px;
+}
+
+
+.electricPage-content .oneLine{
+    display: flex;
+}
+
+.electricPage-content .searchStatusRoom{
+    width: 200px;
+    margin: 0px 10px;
+}
+
+.electricPage-content .content{
+    min-height: 350px;
+}
+
+.electricPage-content .content .header p{
+    font-size: 17px;
+    font-weight: 600;
+    justify-self: center;
+}
+
+.electricPage-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.electricPage-content .content .header::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
+
+.electricPage-content .content .content-item,
+.electricPage-content .content .header{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 1.5fr 1.5fr 1fr 1fr 1.5fr 1fr;
+}
+
+.electricPage-content .content .content-item .item{
+    justify-self: center;
+    transition: 0.2s ease all;
+}
+
+.electricPage-content .content .content-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.electricPage-content .content .content-item::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.electricPage-content .content .content-item:last-child:after{
+    display: none;
+}
+
+.electricPage-content .button-clear .css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100% !important;
+}
+
+.electricPage-content .content .content-item .item .icon .css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.electricPage-content .content .content-item .item .icon:hover .css-i4bv87-MuiSvgIcon-root{
+    transform: scale(1.1);
+}

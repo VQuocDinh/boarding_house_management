@@ -1,0 +1,124 @@
+.depositPage-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.depositPage-content{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.depositPage-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.depositPage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.depositPage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.depositPage-content .searchs .oneLine{
+    display: flex;
+}
+
+.depositPage-content .searchs .searchHouse{
+    width: 200px;
+}
+
+.depositPage-content .searchs .css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100% !important;
+}
+
+.depositPage-content .searchs .searchHouse{
+    margin-right: 15px;
+}
+
+.depositPage-content .searchs .searchStatus{
+    margin-right: 15px;
+    width: 200px;
+}
+
+.depositPage-content .content{
+    min-height: 350px;
+}
+
+.depositPage-content .content .content-item,
+.depositPage-content .content .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.depositPage-content .content .content-item .item{
+    justify-self: center;
+}
+
+.depositPage-content .content .header p{
+    font-size: 15px;
+    font-weight: 600;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.depositPage-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.depositPage-content .content .content-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.depositPage-content .content .content-item::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+}
+.depositPage-content .content .content-item:last-child:after{
+    display: none;
+}
+
+.depositPage-content .content .header::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.depositPage-content .content .content-item .item .buttons{
+    display: flex;
+}
+
+.depositPage-content .content .content-item .item .buttons .css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.depositPage-content .content .content-item .item .buttons .icon{
+    transition: 0.2s ease all;
+}
+
+.depositPage-content .content .content-item .item .buttons .icon:hover{
+    transform: scale(1.1);
+}

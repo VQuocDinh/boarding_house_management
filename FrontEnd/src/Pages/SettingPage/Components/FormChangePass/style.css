@@ -1,0 +1,26 @@
+.FormChangePass{
+    min-width: 350px;
+    text-align: center;
+}
+
+
+.FormChangePass .formChangePass-header{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2374e1;
+    padding-bottom: 20px;
+}
+
+.FormChangePass .input{
+    margin: 10px 0px;
+}
+
+.FormChangePass .buttons{
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-cancel{
+    margin-right: 10px;
+}

@@ -1,0 +1,7 @@
+
+
+.report_roomNotDone-content .content.contract .content-item,
+.report_roomNotDone-content .content.contract .header{
+    display: grid;
+    grid-template-columns:  2fr 1fr 2fr 2fr 1fr 2fr 2fr 1fr 1fr;
+}

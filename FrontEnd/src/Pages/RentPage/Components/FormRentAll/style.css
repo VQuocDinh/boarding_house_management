@@ -1,0 +1,48 @@
+.FormRentOne-container{
+    width: 450px;
+}
+
+.FormRentOne-content .header{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.FormRentOne-content .input{
+    margin-bottom: 20px;
+}
+
+.FormRentOne-content .FormRentOne-container-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.FormRentOne-content .FormRentOne-container-button .button{
+    margin-right: 15px;
+}
+
+
+.FormRentOne-content .rooms-list{
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.FormRentOne-content .rooms-list .item{
+    display: flex;
+    align-items: center;
+}
+
+.FormRentOne-content .inputSpecial{
+    display: flex;
+    align-items: center;
+}
+
+.FormRentOne-content .inputSpecial p{
+    padding-bottom: 5px;
+}

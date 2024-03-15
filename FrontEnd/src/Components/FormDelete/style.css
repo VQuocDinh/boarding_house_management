@@ -1,0 +1,29 @@
+.formDelete-container{
+    padding: 20px 20px 10px 20px;
+}
+
+.formDelete-container .header{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.formDelete-container .content{
+    font-size: 18px;
+    margin-bottom: 15px;
+    white-space: pre-line
+}
+
+.formDelete-container p{
+    display: block;
+    text-align: center;
+}
+
+.formDelete-container .buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.formDelete-container .buttons .button{
+    margin-right: 10px;
+}

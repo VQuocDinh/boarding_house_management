@@ -1,0 +1,115 @@
+.arisePage-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.arisePage-content{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.arisePage-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.arisePage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.arisePage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.arisePage-content .searchs .searchHouse{
+    width: 200px;
+    margin-right: 15px;
+}
+
+.arisePage-content .searchs .oneLine{
+    display: flex;
+}
+
+.arisePage-content .content{
+    min-height: 300px;
+}
+
+.arisePage-content .content-item,
+.arisePage-content .content .header{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 200px 1fr 1fr 1fr;
+}
+
+.arisePage-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.arisePage-content .content .header::after{
+    content:  "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.arisePage-content .content .header p{
+    justify-self: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.arisePage-content .content-item .item{
+    justify-self: center;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.arisePage-content .content-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.arisePage-content .content-item::after{
+    content:  "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.arisePage-content .content-item:last-child:after{
+    display: none;
+}
+
+.arisePage-content .content-item .buttons{
+    display: flex;
+}
+
+.arisePage-content .content-item .buttons .icon{
+    transition: 0.2s all ease;
+}
+
+.arisePage-content .content-item .buttons .icon:hover{
+    transform: scale(1.1);
+}
+
+.arisePage-content .searchs .css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100%;
+    margin-left: 15px;
+}
+
+

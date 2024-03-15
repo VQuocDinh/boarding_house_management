@@ -1,0 +1,15 @@
+.formAddGuess-container{
+    width: 1200px;
+}
+
+.formAddGuess-container .input{
+    margin-bottom: 20px;
+}
+
+.formAddGuess-container .header{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}

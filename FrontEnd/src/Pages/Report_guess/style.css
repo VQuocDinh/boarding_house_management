@@ -1,0 +1,128 @@
+.report_guess-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.report_guess-content{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.report_guess-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.report_guess-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.report_guess-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.report_guess-content .searchs .oneLine{
+    display: flex;
+}
+
+.report_guess-content .searchs .oneLine .searchHouse,
+.report_guess-content .searchs .oneLine .searchRoom,
+.report_guess-content .searchs .oneLine .searchStatus{
+    width: 200px;
+    margin-right: 15px;
+}
+
+
+
+.report_guess-content .content{
+    min-height: 350px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.report_guess-content .content .header p{
+    font-size: 17px;
+    font-weight: 600;
+    justify-self: center;
+    white-space: pre-line
+}
+
+.report_guess-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.report_guess-content .content .header::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 3px;
+    background-color: black;
+}
+
+.report_guess-content .content .content-item,
+.report_guess-content .content .header{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1.2fr 1.2fr 1fr 1fr;
+}
+
+.report_guess-content .content .content-item .item{
+    justify-self: center;
+    transition: 0.2s ease all;
+    text-align: center;
+    white-space: pre-line
+}
+
+.report_guess-content .content .content-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.report_guess-content .content .content-item::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.report_guess-content .content .content-item:last-child:after{
+    display: none;
+}
+
+.report_guess-content .button-clear .css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100% !important;
+}
+
+.report_guess-content .content .buttons{
+    display: flex;
+}
+
+
+.report_guess-content .content .css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.report_guess-content .content .item .button{
+    transition: 0.2s all ease;
+}
+
+.report_guess-content .content .item .button:hover{
+    transform: scale(1.1);
+}

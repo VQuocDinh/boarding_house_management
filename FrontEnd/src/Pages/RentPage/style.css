@@ -1,0 +1,127 @@
+.rentPage-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.rentPage-content{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.rentPage-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.rentPage-content .header .buttons{
+    display: flex;
+}
+
+.rentPage-content .header .buttons .button{
+    margin-right: 15px;
+}
+
+.rentPage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rentPage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.rentPage-content .oneLine{
+    display: flex;
+}
+
+.rentPage-content .oneLine .searchHouse{
+    width: 200px;
+    margin-right: 15px;
+}
+
+.css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100% !important;
+}
+
+.rentPage-content .content{
+    min-height: 350px;
+}
+
+.rentPage-content .content .content-item,
+.rentPage-content .content .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.rentPage-content .content .header p{
+    font-size: 16px;
+    font-weight: 600;
+    justify-self: center;
+    text-align: center;
+}
+
+.rentPage-content .content .content-item .item{
+    justify-self: center;
+    text-align: center;
+}
+
+.rentPage-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.rentPage-content .content .header::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+.rentPage-content .content .content-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.rentPage-content .content .content-item::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.rentPage-content .content .content-item:last-child::after{
+    display: none;
+}
+
+
+.rentPage-content .content .content-item .item .buttons{
+    display: flex;
+}
+
+.rentPage-content .content .content-item .item .buttons .css-i4bv87-MuiSvgIcon-root{
+    height: 20px !important;
+    width: 20px !important;
+    margin-right: 2px;
+}
+
+.rentPage-content .content .content-item .item .buttons .icon{
+    transition: 0.2s all ease;
+}
+
+.rentPage-content .content .content-item .item .buttons .icon:hover{
+    transform: scale(1.1);
+}

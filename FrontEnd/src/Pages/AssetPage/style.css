@@ -1,0 +1,124 @@
+.assetPage-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.assetPage-content{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.assetPage-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.assetPage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.assetPage-content .header .oneLine{
+    display: flex;
+}
+
+.assetPage-content .header .button-clear{
+    margin-right: 15px;
+}
+
+.assetPage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.assetPage-content .searchs .oneLine{
+    display: flex;
+}
+
+.assetPage-content .searchs .oneLine .searchRoom,
+.assetPage-content .searchs .oneLine .searchHouse{
+    width: 200px;
+    margin-right: 15px;
+}
+
+
+.assetPage-content .content{
+    max-width: 1200px;
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+
+.assetPage-content .content .content-item,
+.assetPage-content .content .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1.5fr 1.5fr 0.7fr 1fr 1fr 0.5fr;
+}
+
+.assetPage-content .content .header p{
+    font-size: 17px;
+    font-weight: 600;
+    justify-self: center;
+    text-align: center;
+}
+
+.assetPage-content .content .content-item .item{
+    justify-self: center;
+}
+
+.assetPage-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.assetPage-content .content .header::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.assetPage-content .content .content-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.assetPage-content .content .content-item::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.assetPage-content .content .content-item:last-child::after{
+    display: none;
+}
+
+.assetPage-content .content .content-item .item .buttons{
+    display: flex;
+}
+
+.assetPage-content .content .content-item .item .buttons .css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.assetPage-content .content .content-item .item .buttons .icon{
+    transition: 0.2s all ease;
+}
+
+.assetPage-content .content .content-item .item .buttons .icon:hover{
+    transform: scale(1.2);
+}

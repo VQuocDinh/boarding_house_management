@@ -1,0 +1,125 @@
+.spendPage-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.spendPage-content{
+    margin-top: 50px;
+    width: 90%;
+}
+
+.spendPage-content .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.spendPage-content .header p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.spendPage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.spendPage-content .searchs .oneLine{
+    display: flex;
+}
+
+.spendPage-content .searchs .oneLine .searchHouse{
+    width: 200px;
+}
+
+.spendPage-content .searchs .oneLine  .searchNote{
+    margin: 0px 15px;
+}
+
+.spendPage-content .searchs .oneLine .css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+    height: 100% !important;
+}
+
+.spendPage-content .content{
+    max-width: 1200px;
+    min-height: 300px;
+}
+
+.spendPage-content .content .content-list .content-item,
+.spendPage-content .content .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1.5fr 2.5fr 1fr;
+}
+
+.spendPage-content .content .header p{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    justify-self: center;
+    text-align: center;
+}
+
+.spendPage-content .content .content-list .content-item .item{
+    justify-self: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-line
+}
+
+.spendPage-content .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.spendPage-content .content .header::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.spendPage-content .content .content-list .content-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.spendPage-content .content .content-list .content-item::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.spendPage-content .content .content-list .content-item:last-child::after{
+    display: none;
+}
+
+
+.spendPage-content .content .content-list .content-item .item .buttons{
+    display: flex;
+}
+
+.spendPage-content .content .content-list .content-item .item .button{
+    transition: 0.2s all ease;
+}
+
+.spendPage-content .content .content-list .content-item .item .button:hover{
+    transform: scale(1.1)
+}
+
+.spendPage-content .content .content-list .content-item .item .buttons .css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}

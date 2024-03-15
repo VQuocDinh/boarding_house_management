@@ -1,0 +1,7 @@
+
+.report_roomNotDone-content .content.EndSoon .content-item,
+.report_roomNotDone-content .content.EndSoon .header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 2fr 1fr !important;
+}
+

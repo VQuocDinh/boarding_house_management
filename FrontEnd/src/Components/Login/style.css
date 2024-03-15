@@ -1,0 +1,260 @@
+.Register-Container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.overlay{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background-image: url('../../files/imgs/dark-sunset.jpg');
+   z-index: 2;
+   background-repeat: no-repeat;
+   background-size: 180% 140%;
+   background-position: center center;
+   overflow: hidden;
+}
+
+.overlay::after{
+    content: "";
+    background-image: url('../../files/imgs/dark-sunset.jpg');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 110%;
+    height: 100%;
+    filter: blur(12px);
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-size: 180% 140%;
+    background-position: center center;
+}
+
+
+.register-form_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form_container-content{
+    margin-top: 50px;
+    width: 1090px;
+    height: 580px;
+    background-color: white;
+    display: flex;
+    background-image: url('/src/files/imgs/dark-sunset.jpg');
+    background-size: 100% 100%;
+    display: flex;
+}
+
+.form_container-left{
+    flex: 60%;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form_container-left_floor1{
+    display: flex;
+    align-items: center;
+}
+
+.form_container-right img,
+.form_container-left_floor1 img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.form_container-right img{
+    display: none;
+}
+
+.form_container-left_floor1 p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 23px;
+}
+
+
+
+.form_container-left_floor2 h1{
+    font-weight: normal;
+    width: 200px;
+}
+
+.form_container-left_floor2 p{
+    margin-top: 20px;
+    width: 350px;
+    /* color: rgb(197, 202, 206); */
+}
+
+.form_container-left_floor2 .floor2-icons{
+    margin-top: 20px;
+}
+
+.floor2-icons i{
+    margin-right: 10px;
+    width: 10px ;
+    cursor: pointer;
+}
+.floor2-icons i .MuiSvgIcon-root{
+    width: 20px !important;
+}
+.floor2-icons i:hover .MuiSvgIcon-root{
+    color: red;
+}
+
+.form_container-right{
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    padding: 20px 40px;
+}
+
+.form_container-right form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container-right form #outlined-weight-helper-text,
+.form_container-right form #outlined-basic-helper-text{
+    font-size: 16px !important;
+}
+
+.form_container-right .MuiFormLabel-root,
+.form_container-right form #standard-adornment-password,
+.form_container-right form #outlined-basic-label,
+.form_container-right form #outlined-basic{
+    color: white !important;
+    font-size: 15px !important;
+    top: 10px !important;
+}
+
+.form_container-right form .MuiInputBase-root{
+    margin-top: 30px !important;
+}
+
+
+.form_container-right form .css-1ptx2yq-MuiInputBase-root-MuiInput-root:before,
+.form_container-right form .css-1a1fmpi-MuiInputBase-root-MuiInput-root:before{
+    border-bottom: 1px solid white;
+}
+
+.form_container-right form .css-r47a1p-MuiFormControl-root{
+    width: 100% !important;
+    margin: 0 !important;
+}
+.form_container-right h1{
+    font-weight: normal;
+    margin-bottom: 50px;
+
+}
+
+.containerForm-button{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.containerForm-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 30px;
+    cursor: pointer;
+    opacity: 80%;
+    transition: all 0.2s linear;
+}
+
+.containerForm-button button:hover{
+    opacity: 100%;
+}
+
+.containerForm-button button:active{
+    transform: scale(1.1);
+}
+
+.containerForm-button span{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 0.2s linear;
+    transform: scale(0.9);
+}
+
+.containerForm-button span:hover{
+    transform: scale(1);
+}
+
+@media screen and (max-width : 1200px) and (min-width : 950px) {
+    .register-form_container-content{
+        width: 900px;
+        
+    }
+    .form_container-right{
+        padding: 20px 30px;
+    }
+    .form_container-left{
+        padding: 50px 70px;
+    }
+    .containerForm-button button{
+        padding: 10px 40px;
+    }
+    
+}
+
+@media screen and (max-width : 950px) and (min-width: 751px){
+    .register-form_container-content{
+        width: 750px;
+        height: 550px;
+    }
+    .form_container-right{
+        padding: 20px 20px;
+    }
+    .form_container-left{
+        padding: 50px 20px 50px 40px;
+    }
+    .containerForm-button button{
+        padding: 10px 25px;
+    }
+    
+}
+
+@media screen and (max-width : 751px){
+    .register-form_container-content{
+        width: 400px;
+        
+    }
+    .form_container-left{
+       display: none;
+    }
+    .form_container-right{
+        align-items: center;
+    }
+    .form_container-right img{
+        display: block;
+    }
+    
+}
+
+.floor2-icons{
+    display: flex !important; 
+}

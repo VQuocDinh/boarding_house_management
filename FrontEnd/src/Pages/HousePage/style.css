@@ -1,0 +1,139 @@
+
+.housePage-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.housePage-content{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.housePage-content .header{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.housePage-content .lineOne{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.housePage-content .content{
+    margin-top: 50px;
+}
+
+
+.housePage-content .content-list .content-item,
+.housePage-content .header-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr 1fr;
+}
+
+.housePage-content .content-list .content-item .item,
+.housePage-content .header-content p{
+    justify-self: center;
+}
+
+.housePage-content .header-content{
+    position: relative;
+}
+
+.housePage-content .header-content::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.housePage-content .content-list{
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.housePage-content .content-list .content-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.housePage-content .content-list .content-item::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.housePage-content .content-list .content-item .item-icons{
+    display: flex;
+}
+
+.housePage-content .searchs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------- */
+
+.housePage-content .rooms{
+    margin-top: 100px;
+    min-height: 500px;
+}
+
+.rooms .content-list .content-item,
+.rooms .content .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+}
+
+.rooms .content-item .item,
+.rooms .content .header p {
+    justify-self: center;
+}
+
+.rooms .content .header p{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.rooms .content .header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.rooms .content .header::after{
+    content: "";
+    width: 80%;
+    height: 4px;
+    background-color: black;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.rooms .content-item .buttons{
+    display: flex;
+}
+
+.rooms .content-item .buttons .button{
+    margin-right: 10px;
+}

@@ -1,0 +1,71 @@
+.formAddServiceRoom-container{
+    width: 100%;
+}
+
+.formAddServiceRoom-container .content .header{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.formAddServiceRoom-container .content .item,
+.formAddServiceRoom-container .content .list_header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+}
+
+.formAddServiceRoom-container .content .item .item-item,
+.formAddServiceRoom-container .content .list_header p{
+    justify-self: center;
+}
+
+.formAddServiceRoom-container .content .list_header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formAddServiceRoom-container .content .list_header::after{
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formAddServiceRoom-container .content .item {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.formAddServiceRoom-container .content .item::after{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.formAddServiceRoom-container .content .item:last-child:after{
+    display: none;
+}
+
+.formAddServiceRoom-container .buttons{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.formAddServiceRoom-container .list-content{
+    max-height: 500px;
+    min-height: 250px;
+    overflow-y: scroll;
+}

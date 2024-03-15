@@ -1,0 +1,24 @@
+.formAddRoom-content{
+    width: 1200px;
+}
+
+.formAddRoom-content .header{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formAddRoom-content .oneLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAddRoom-content .oneLine .input{
+    width: 48%;
+}
+
+.formAddRoom-content .input{
+    margin-bottom: 20px;
+}

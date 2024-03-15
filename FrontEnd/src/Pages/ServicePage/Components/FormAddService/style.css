@@ -1,0 +1,15 @@
+.formAddService-container{
+    width: 550px;
+}
+
+.formAddService-content .header{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.formAddService-content .input{
+    margin-bottom: 15px;
+}

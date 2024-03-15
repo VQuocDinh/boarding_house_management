@@ -1,0 +1,25 @@
+.formAddInfor-container{
+    padding: 30px 0px 20px 0px;
+}
+
+
+.formAddInfor-form .input{
+    margin-bottom: 15px;
+}
+
+.formAddInfor-form .oneLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAddInfor-form .oneLine .input{
+    width: 49%;
+}
+
+
+.formAddInfor-form .buttons{
+    width: 100%;
+    text-align: end;
+    display: block;
+    padding-right: 20px;
+}
